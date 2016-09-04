@@ -13,7 +13,7 @@
 			header('Location: http://fetchinfo.com/fetch-info-auth/public/html/home.php');
 		}
 ?>
-<form action="http://fetchinfo.com/fetch-info-auth/public/html/login.php" method="post">
+<form action="" method="post">
 	<input type="text" name="email" maxlength="30" placeholder="username">
 	<input type="password" name="password" maxlength="30" placeholder="password">
 	<input type="submit" value="Submit">
