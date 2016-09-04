@@ -10,7 +10,7 @@
 		if(!is_integer($result)){
 			setcookie('login', $result[1], time()+86400, "/", "", false, true) ;
 			setcookie('session_id', $result[0], time()+86400, "/", "", false, true) ;
-			header('Location: http://fetchinfo.com/fetch-info-auth/public/html/home.php');
+			header('Location: home.php');
 		}
 ?>
 <form action="" method="post">

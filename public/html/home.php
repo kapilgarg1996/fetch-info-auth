@@ -8,7 +8,7 @@
 	require_once(__DIR__.'/../../script/auth/auth.php') ;
 	$result = auth() ;
 	if(is_integer($result)){
-		header('Location: http://fetchinfo.com/fetch-info-auth/public/html/login.php');
+		header('Location: login.php');
 	}
 	else{
 		setcookie('login', $result[1], time()+86400, "/", "", false, true) ;
