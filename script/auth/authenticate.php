@@ -22,7 +22,7 @@
 				$token = mysqli_fetch_row($result)[1] ;
 				if(isset($_COOKIE['login'])){
 					$login = $_COOKIE['login'] ;
-					echo "Session: ".$session_id."\n Token: ".$token."\n Cookie: ".$login ;
+					echo "Session: ".$session_id."<br/> Token: ".$token."<br/> Cookie: ".$login ;
 					if($token == $login){
 						$new_token = generateRandomString(100) ;
 						$new_time = date('Y-m-d H:i:s', strtotime(date('Y-m-d H:i:s'))+86400000) ;
